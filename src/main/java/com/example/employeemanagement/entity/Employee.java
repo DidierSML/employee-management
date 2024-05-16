@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "mt_employee")
-public class EmployeeEntity {
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,10 +25,10 @@ public class EmployeeEntity {
     @Column(name = "address")
     private String address;
 
-    public EmployeeEntity() {
+    public Employee() {
     }
 
-    public EmployeeEntity(Long id, String name, String gender, Date dateOfBirth, String address) {
+    public Employee(Long id, String name, String gender, Date dateOfBirth, String address) {
         this.id = id;
         this.name = name;
         this.gender = gender;
